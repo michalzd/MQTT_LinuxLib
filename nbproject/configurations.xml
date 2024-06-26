@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="Client" projectFiles="true">
+        <itemPath>MQTT/Client/MQTTClient.c</itemPath>
+        <itemPath>MQTT/Client/MQTTClient.h</itemPath>
+        <itemPath>MQTT/Client/MQTTLinux.c</itemPath>
+        <itemPath>MQTT/Client/MQTTLinux.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="Packet" projectFiles="true">
+        <itemPath>MQTT/Packet/MQTTConnect.h</itemPath>
+        <itemPath>MQTT/Packet/MQTTConnectClient.c</itemPath>
+        <itemPath>MQTT/Packet/MQTTConnectServer.c</itemPath>
+        <itemPath>MQTT/Packet/MQTTDeserializePublish.c</itemPath>
+        <itemPath>MQTT/Packet/MQTTFormat.c</itemPath>
+        <itemPath>MQTT/Packet/MQTTFormat.h</itemPath>
+        <itemPath>MQTT/Packet/MQTTPacket.c</itemPath>
+        <itemPath>MQTT/Packet/MQTTPacket.h</itemPath>
+        <itemPath>MQTT/Packet/MQTTPublish.h</itemPath>
+        <itemPath>MQTT/Packet/MQTTSerializePublish.c</itemPath>
+        <itemPath>MQTT/Packet/MQTTSubscribe.h</itemPath>
+        <itemPath>MQTT/Packet/MQTTSubscribeClient.c</itemPath>
+        <itemPath>MQTT/Packet/MQTTSubscribeServer.c</itemPath>
+        <itemPath>MQTT/Packet/MQTTUnsubscribe.h</itemPath>
+        <itemPath>MQTT/Packet/MQTTUnsubscribeClient.c</itemPath>
+        <itemPath>MQTT/Packet/MQTTUnsubscribeServer.c</itemPath>
+        <itemPath>MQTT/Packet/StackTrace.h</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>MQTT/Packet</Elem>
+    <Elem>MQTT/Client</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="2">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <incDir>
+            <pElem>MQTT/Packet</pElem>
+            <pElem>MQTT/Client</pElem>
+          </incDir>
+        </cTool>
+      </compileType>
+      <item path="MQTT/Client/MQTTClient.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="MQTT/Client/MQTTClient.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MQTT/Client/MQTTLinux.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="MQTT/Client/MQTTLinux.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTConnect.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTConnectClient.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTConnectServer.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTDeserializePublish.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTFormat.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTFormat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTPacket.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTPacket.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTPublish.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTSerializePublish.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTSubscribe.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTSubscribeClient.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTSubscribeServer.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTUnsubscribe.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTUnsubscribeClient.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTUnsubscribeServer.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="MQTT/Packet/StackTrace.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="2">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+          <incDir>
+            <pElem>MQTT/Packet</pElem>
+            <pElem>MQTT/Client</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="MQTT/Client/MQTTClient.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="MQTT/Client/MQTTClient.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MQTT/Client/MQTTLinux.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="MQTT/Client/MQTTLinux.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTConnect.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTConnectClient.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTConnectServer.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTDeserializePublish.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTFormat.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTFormat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTPacket.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTPacket.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTPublish.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTSerializePublish.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTSubscribe.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTSubscribeClient.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTSubscribeServer.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTUnsubscribe.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTUnsubscribeClient.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="MQTT/Packet/MQTTUnsubscribeServer.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="MQTT/Packet/StackTrace.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
