@@ -202,6 +202,12 @@ int MQTTDisconnect(MQTTClient* client);
  */
 int MQTTYield(MQTTClient* client, int time);
 
+/** MQTT Keepalive - MQTT background
+ *  @param client - the client object to use 
+ *  @return success code
+ */
+int MQTTKeepalive(MQTTClient* client);
+
 /** MQTT isConnected
  *  @param client - the client object to use
  *  @return truth value indicating whether the client is connected to the server

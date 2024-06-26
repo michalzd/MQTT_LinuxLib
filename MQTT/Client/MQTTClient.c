@@ -346,16 +346,22 @@ int MQTTYield(MQTTClient* c, int timeout_ms)
     TimerInit(&timer);
     TimerCountdownMS(&timer, timeout_ms);
 
-	  do
+    do
     {
         if (cycle(c, &timer) < 0)
         {
             rc = FAILURE;
             break;
         }
-  	} while (!TimerIsExpired(&timer));
+    } while (!TimerIsExpired(&timer));
 
     return rc;
+}
+
+
+int MQTTKeepalive(MQTTClient* c)
+{
+    return keepalive(c);
 }
 
 int MQTTIsConnected(MQTTClient* client)
